@@ -148,7 +148,7 @@ jobs:
           at: .
       - run:
           name: deploy app to staging
-          command: bin/deploy_to_heroku.sh ci-workshop-app-bob-staging
+          command: bin/deploy_to_heroku.sh ci-workshop-funan-staging
   deploy_prod:
     docker:
       - image: circleci/python:3.6.1
@@ -157,7 +157,7 @@ jobs:
           at: .
       - run:
           name: deploy app to prod
-          command: bin/deploy_to_heroku.sh ci-workshop-app-bob-prod
+          command: bin/deploy_to_heroku.sh ci-workshop-funan-staging
 
 
 workflows:
